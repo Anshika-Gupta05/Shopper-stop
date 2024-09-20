@@ -10,7 +10,7 @@ import Footer from "./Components/Footer/Footer";
 import men_banner from "./Components/Assets/banner_mens.png";
 import women_banner from "./Components/Assets/banner_women.png";
 import kid_banner from "./Components/Assets/banner_kids.png";
-export const backend_url = "http://localhost:4000";
+export const backend_url = "https://shopper-stop-backend.onrender.com";
 export const currency = "₹";
 export const admin_url = "http://localhost:5173";
 function App() {
