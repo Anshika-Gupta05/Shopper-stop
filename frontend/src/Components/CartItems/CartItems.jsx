@@ -22,7 +22,7 @@ const CartItems = () => {
           return (
             <div>
               <div className="cartitems-format cartitems-format-main">
-                <img src={e.image} alt="" className="cartitems-product-icon" />
+                <img src={backend_url + e.image} alt="" className="cartitems-product-icon" />
                 <p>{e.name}</p>
                 <p>
                   {currency}
