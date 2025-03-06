@@ -12,8 +12,8 @@ const port = process.env.PORT || 4000;
 const mongoUrl = process.env.MONGO_URL;
 const jwtSecret = process.env.JWT_SECRET;
 const allowedOrigins = [
-  "https://cure-care-frontend.vercel.app",
-  "https://cure-care-admin.vercel.app"
+  "https://shopper-stop-frontend.vercel.app",
+  "https://shopper-stop-admin.vercel.app"
 ];
 
 
