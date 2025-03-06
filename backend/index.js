@@ -11,9 +11,23 @@ const cors = require("cors");
 const port = process.env.PORT || 4000;
 const mongoUrl = process.env.MONGO_URL;
 const jwtSecret = process.env.JWT_SECRET;
+const allowedOrigins = [
+  "https://cure-care-frontend.vercel.app",
+  "https://cure-care-admin.vercel.app"
+];
+
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  credentials: true
+}));
 
 // Database Connection With MongoDb
 mongoose.connect(mongoUrl);
