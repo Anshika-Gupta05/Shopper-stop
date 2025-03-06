@@ -12,7 +12,7 @@ import women_banner from "./Components/Assets/banner_women.png";
 import kid_banner from "./Components/Assets/banner_kids.png";
 export const backend_url = "https://shopper-stop-backend.onrender.com";
 export const currency = "₹";
-export const admin_url = "https://shopper-stop-admin.onrender.com";
+export const admin_url = "https://shopper-stop-admin.vercel.app";
 function App() {
   return (
     <div>
